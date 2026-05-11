@@ -1,0 +1,956 @@
+ /* .containe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+   grid-auto-rows: 100px;
+   grid-auto-rows: minmax(100px , auto);
+
+
+.cn{
+    grid-template-columns: 1fr   ;
+    display: grid;
+   
+    grid-template-rows: 1fr ;
+}
+
+.pn{
+    display: grid;
+    grid-template-columns: 50px 1fr   ;
+}
+
+
+
+} 
+
+.cn{
+
+    
+    display: grid;
+    grid-template-columns: 50px 500px 1fr  ;
+    grid-template-rows: auto;
+    
+
+}
+
+.w{
+    align-self:center;
+}
+
+.q{
+
+    justify-self: center;
+
+}
+
+
+.container{
+ padding-top: 200px;
+    display: grid;
+    grid-template-areas: 
+    'heder heder'
+    'sidebar content';
+
+    grid-gap: 10px;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.heder{
+    grid-area: heder;
+    grid-template-columns: 1fr;
+    justify-content: ce;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    align-self: start;
+}
+
+.content{
+    grid-area: content;
+}
+
+.item_7{
+   grid-row-start: 1;
+   grid-column: 2;   
+}
+
+.item_3{
+grid-column: 1/3;
+grid-row: 2/3;
+}
+
+body{
+    height: 2000px;
+}
+
+.item{
+    padding: 10px;
+    border: 1px solid black;
+} 
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+
+  [class^="box-"] {
+    background-color: skyblue;
+    /* Размещаем контейнеры по центру 
+    display: grid;
+    place-items: center;
+  }
+
+
+
+  .container1{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 10% 10%;
+    justify-content: end;
+  }
+
+  .container {
+    display: grid;
+    gap: 20px;
+
+    grid-template-areas: 
+    "A A "
+    "B C"
+    
+    ;
+
+    justify-content: start;
+
+    grid-template-columns: 10% 60% ;
+
+   
+   
+
+
+    
+    
+     grid-template-areas:
+    "A A A A   A A A A   A A A A"
+    "B B B B   B B B B   B B C C"
+    "B B B B   B B B B   B B C C";
+
+  
+
+
+  }
+
+
+  .box-1 {
+    grid-area: A;
+  }
+  .box-2 {
+    grid-area: B;
+
+    
+  }
+  .box-3 {
+    grid-area: C;
+    justify-self: stretch;
+  }
+
+  .box-4{
+    justify-self: end;
+
+
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  */
+
+  @font-face {
+    font-family: 'MyCustomFont';
+    src: url('Archangelsk\ Regular.ttf');
+    /* Дополнительные свойства шрифта, такие как font-weight и font-style, могут быть указаны здесь */
+  }
+
+
+ 
+
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+.cyberpank{
+  max-width: 250px;
+}
+
+
+.imgcastsoc{
+
+  justify-self: end;
+
+  max-width: 28px;
+
+
+}
+
+
+
+.ContainerImg{
+  display: grid;
+  grid-template-columns: 85% ;
+  grid-template-rows:  263px;
+
+
+}
+
+body{
+
+  font-family: 'MyCustomFont';
+}
+
+
+.txtWImgCast{
+  max-width: 330px;
+  margin-left: 10px;
+  font-family: 'MyCustomFont';
+
+
+}
+
+.buttonCast{
+  font-family: 'MyCustomFont';
+  color: rgba(248, 242, 0, 1);
+  background-color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  border: 0px;
+  margin-top: 10px ;
+
+  cursor: pointer;
+}
+
+
+
+.ClasDivIMG{
+  justify-self: end;
+  font-size: 40px;
+
+  padding-top: 45px;
+  padding-left: 45px;
+
+  background-image: url("img/Jblock.png");
+  background-size: contain; /* Картинка будет масштабироваться так, чтобы сохранять свои пропорции и помещаться в контейнер */
+  min-height: 400px;
+  min-width: 400px;
+  
+  /* Максимальная высота контейнера */
+  overflow: hidden; /* Скрываем части изображения, которые выходят за пределы контейнера */
+  background-repeat: no-repeat; /* Изображение не будет повторяться */
+
+}
+
+
+
+.containerTXTVISTWO{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns:  90%;
+  
+justify-content: end;
+}
+
+.CityTXT{
+  font-size: 40px;
+padding-bottom: 10px;
+font-family: A;
+font-family: 'MyCustomFont';
+}
+
+.TXT{
+max-width: 80%;
+font-size: 17px;
+font-family: 'MyCustomFont';
+
+}
+
+.containerImgCity{
+  margin-top: 50px;
+  display: grid;
+  margin-left: 10px;
+
+
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: end;
+
+}
+
+
+
+.onecontainerW{
+  grid-gap: 10px;
+  display: grid;
+  justify-items: center;
+}
+
+.e{
+  justify-self: end;
+}
+.city3dopblock{
+  display: grid;
+  align-items: center;
+}
+
+
+.city1{
+  max-width: 58%;
+}
+
+.city2{
+  max-width: 58%;
+}
+
+.city3{
+  max-width: 100%;
+}
+
+
+@media(max-width: 824px){
+
+  .city1{
+    max-width: 100%;
+
+  }
+  
+  .city2{
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+}
+
+.opacity{
+  opacity: 0.7;
+}
+
+.Cyberpunk{
+  color: #42aaff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+
+.containerHeder{
+  display: grid;
+
+  min-height: 500px;
+
+  grid-template-columns: 46%  17% 5% 5% 5% 5% 5%;
+  grid-template-rows: 100px;
+  align-items: center;
+
+  grid-template-areas: "imgHeder   link1 link2 link3 link4 link5 link6";
+
+}
+
+.CastImgHederBody{
+  max-width: 350px;
+}
+
+
+  .imgCastBg{
+    background-image: url('img/imgbg.png'); /* Путь к изображению */
+    background-size: cover; /* Изображение растянется на весь экран */
+    background-position: center; /* Центрирование изображения */
+  }
+
+
+
+  .w{
+    grid-area: w;
+  }
+
+
+  .link1{
+    grid-area: link1;
+
+    
+  }
+  .link2{
+    grid-area: link2;
+
+  }
+  .link3{
+    grid-area: link3;
+  }
+  .link4{
+    grid-area: link4;
+  }
+  .link5{
+    grid-area: link5;
+  }
+  .link6{
+    grid-area: link6;
+  }
+
+
+  .imgHeder{
+    justify-self: center;
+    grid-area: imgHeder;
+  }
+
+
+
+
+
+
+
+@media(max-width: 975px){
+  .sell{
+    display: none;
+  }
+}
+
+.containerSell{
+
+  padding-top: 20px;
+
+  max-width: 1100px;
+  padding: 0 80px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:  89% ;
+
+
+
+}
+
+
+.dopcontainerSell{
+  display: grid;
+  max-width: 1100px;
+  padding: 0 80px;
+  margin: 0 auto;
+
+grid-template-columns:  100%;
+
+}
+
+
+
+.txtpodsell{
+
+
+  color: white;
+  margin-top: 20px;
+  justify-self: end;
+
+  font-size: 16px;
+  margin-bottom: 20px;
+
+}
+
+.BlockProdaj{
+  background-color: black;
+  margin-top: 70px;
+}
+
+.sell{
+
+  max-width: 40%;
+
+}
+
+
+.line1Sell{
+
+  color: white;
+  font-size: 60px;
+}
+
+
+
+
+
+
+hr{
+  max-height: 1px;
+}
+
+#name{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  font-size: 18px;
+}
+
+#email{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  font-size: 18px;
+}
+
+.containerdopclassinput{
+  max-width: 1100px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+@media(max-width: 915px) {
+  
+.containerdopclassinput{
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.castblockstextslevomonitor{
+  max-width: 1100px;
+  padding: 0 0px;
+  margin: 0 ;
+
+}
+
+.dopcontainerSell{
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: 0 auto;
+  
+}
+
+.containerSell{
+  max-width: 1100px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.footer{
+  max-width: 1100px;
+  padding: 0 0px;
+  margin: 0 ;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+
+
+}
+
+@media(max-width: 874px){
+  .vsoImg{
+    justify-self: center;
+  }
+
+}
+
+
+.dopclassinput{
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.imgcastFiles1{
+  cursor: pointer;
+  margin-top: 20px;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+
+.castbottumPodFiles{
+  color: black;
+  background-color: rgba(248, 242, 0, 1);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-bottom: 20px;
+
+  cursor: pointer;
+}
+
+.radio-button {
+  width: 20px; /* Ширина иконки */
+  height: 20px; /* Высота иконки */
+  border: 1px solid rgba(248, 242, 0, 1); /* Рамка вокруг иконки */
+  display: inline-block; /* Выравнивание иконки */
+  cursor: pointer; /* Курсор в виде указателя */
+  position: relative; /* Относительное позиционирование */
+  margin-right: 5px; /* Отступ справа */
+  border-radius: 0px;
+}
+
+
+input[type="radio"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: transparent;
+  height: 16px;
+  width: 16px;
+  border: 1px solid rgba(248, 242, 0, 1);
+}
+
+
+input[type="checkbox"]:hover {
+  filter: brightness(90%);
+}
+
+input[type="checkbox"]:disabled {
+
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+input[type="radio"]:after {
+  content: '';
+  position: relative;
+  left: 40%;
+  top: 20%;
+  width: 15%;
+  height: 40%;
+  border: solid rgba(248, 242, 0, 1);
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+input[type="radio"]:checked:after {
+  display: block;
+}
+.labeltxtpodfiles {
+  display: flex; /* Используем flexbox */
+  align-items: center; /* Выравниваем элементы по вертикали */
+
+  margin-bottom: 20px;
+  margin-left: -5px;
+}
+
+
+.vsoImg{
+  max-width: 95%;
+}
+
+.vso{
+  display: grid;
+  justify-items: end;
+  align-items: center;
+
+}
+
+
+.castblockSMonitor{
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+
+  background-color: rgba(248, 242, 0, 1);
+
+
+}
+
+.castblockstextslevomonitor{
+  max-width: 1100px;
+  padding: 0 80px;
+  margin: 0 auto;
+
+}
+
+
+
+@media(max-width: 566px) {
+  .castblockstextslevomonitor{
+    max-width: 1100px;
+    padding: 0 10px;
+    margin: 0 auto;
+  
+  }
+  
+
+}
+
+@media(max-width:1014px){
+
+
+  .pogrujai{
+    max-width: 90%;
+  }
+
+}
+
+.pogrujai{
+  max-width: 90%;
+}
+
+.Monitor{
+  display: grid;
+  justify-items: center;
+}
+
+.MinotorIMG{
+  margin-top: 30px;
+  max-width: 60%;
+  
+}
+
+.HP{
+  margin-top: 20px;
+  max-width: 60%;
+}
+
+.HPdop{
+  display: grid;
+  justify-items: center;
+  padding-bottom: 20px;
+}
+
+
+
+
+.fullpogurge{
+  margin-top: 30px;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.mDopIMg1{
+
+  max-width: 80%;
+}
+
+.mDopIMg2{
+  max-width: 80%;
+
+}
+
+.mDopIMg3{
+  max-width: 80%;
+}
+
+.imgstxt{
+  margin-top: 20px;
+}
+
+.imgtxtcastblock{
+  display: grid;
+  grid-template-columns: 7% 60%;
+  align-items: center;
+}
+
+.buttomVconse{
+margin-top: 50px;
+
+
+}
+
+.castBtn{
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 0px;
+  border: 0px;
+  background-color: black;
+  color: rgba(248, 242, 0, 1);
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+
+.SetcaDlaMnogo{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.mnogo{
+  max-width: 100%;
+
+}
+
+.doppng{
+  margin-left: 20px;
+
+}
+
+.buytxt{
+  margin-top: 30px;
+
+  align-items: center;
+  max-width: 70%;
+color: white;
+font-size: 50px;
+}
+
+.castBlockBuy{
+  margin-bottom: 4px;
+
+  background-color: black;
+}
+
+
+
+
+
+.txtPodbutyxy{
+  margin-top: 20px;
+  color: rgba(82, 190, 220, 1);
+}
+
+
+.dopimgtxtcastblock{
+  
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 4% 70%;
+  align-items: center;
+  color: white;
+}
+
+.mDopIMg2{
+ 
+  max-width: 100%;
+}
+
+.txtdopclassbuy{
+  margin-left: 7px;
+}
+
+.dopmt{
+  margin-top: 15px;
+}
+
+.xboxes5{
+
+  max-width: 30%;
+}
+
+.dopmtimgbox{
+margin-top: 30px;
+}
+
+.footer{
+  max-width: 1100px;
+  padding: 0 0px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.cyber{
+  margin-right: 20px;
+  max-width: 40%;
+}
+
+.dopclassTXTfooter{
+  display: grid;
+grid-template-columns: 25% 70%;
+  align-self: center;
+}
+
+.footedend{
+  color: white;
+  background-color: black;
+min-height: 35px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 470px){
+  .imgcastsoc{
+    display: none;
+  }
+  .containerHeder{
+    display: grid;
+                          grid-template-columns: 100%  ;
+  }
+
+}
+
+@media(max-width: 384px){
+  .ClasDivIMG{
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 540px){
+
+  .ContainerImg{
+    grid-template-columns: 100%;
+  }
+
+  .ClasDivIMG{
+  
+  }
+
+  .txtWImgCast{
+  margin-left: 40px;
+  }
+
+
+}
+
+@media  (min-width: 470px) and (max-width: 760px) {
+  .containerHeder{
+    display: grid;
+    grid-template-columns: 46%  17% 7% 7% 7% 7% 7%;
+  }
+
+} 
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 10px; /* Пространство между элементами */
+}
+
+.grid-item {
+  background-color: #4CAF50; /* Цвет фона для наглядности */
+  color: white; /* Цвет текста */
+  padding: 20px; /* Отступы вокруг текста */
+  font-size: 30px; /* Размер шрифта */
+  height: 150px; /* Высота элемента */
+}
+
+
+
+@media(max-width: 714px){
+.cyber{
+  align-self: center;
+  max-width: 80%;
+}
+  .cartinki{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+  }
+
+}
